@@ -1,3 +1,7 @@
+## 🎉 1.0.3 `2024-02-06`
+### 🐛 Fix
+- The configuration error causes the scripts of other versions to be not built ([#12ab526](https://github.com/kwooshung/files/commit/12ab526cb42551656f6fe74b1943097e6da692f4))
+
 ## 🎉 1.0.2 `2024-02-06`
 ### 🐛 Fix
 - Increase .CodeClimate.yml ignoring type ([#b29551a](https://github.com/kwooshung/files/commit/b29551af41dff9b80e71dfa2340956a936285cc5))

@@ -1,3 +1,7 @@
+## 🎉 1.0.3 `2024-02-06`
+### 🐛 Fix
+- 구성 오류로 인해 다른 버전의 스크립트가 구축되지 않습니다. ([#12ab526](https://github.com/kwooshung/files/commit/12ab526cb42551656f6fe74b1943097e6da692f4))
+
 ## 🎉 1.0.2 `2024-02-06`
 ### 🐛 Fix
 - .codeclimate.yml 유형을 무시합니다 ([#b29551a](https://github.com/kwooshung/files/commit/b29551af41dff9b80e71dfa2340956a936285cc5))
