@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react-swc';
-import vitePluginImp from 'vite-plugin-imp';
+// import vitePluginImp from 'vite-plugin-imp';
 import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
@@ -39,7 +39,12 @@ export default defineConfig({
     globals: true,
     setupFiles: './vitest-setup.ts',
     environment: 'jsdom',
-    exclude: ['src/__visual_tests__', '**/node_modules/**', '**/dist/**', '**/cypress/**', '**/.{idea,git,cache,output,temp}/**']
+    include: ['src/progressbar/*.test.{ts,tsx}'],
+    exclude: ['**/node_modules/**', '**/dist/**'],
+    coverage: {
+      include: ['src/progressbar/*.{ts,tsx}'],
+      exclude: ['**/*.test.{ts,tsx}', '**/node_modules/**', '**/dist/**', '**/*.d.ts*']
+    }
   },
   css: {
     modules: {
@@ -50,14 +55,14 @@ export default defineConfig({
   build: {
     minify: 'terser',
     lib: {
-      entry: 'src/overlay-scrollbars-smooth/index.ts',
-      name: 'ReactOverlayScrollbarsSmooth',
+      entry: 'src/index.ts',
+      name: 'ReactProgressbarWrapper',
       formats: ['cjs', 'es', 'umd'],
-      fileName: (format) => `react-overlay-scrollbars-smooth.${format}.js`
+      fileName: (format) => `index.${format === 'es' ? 'esm' : format === 'cjs' ? 'cmd' : format}.js`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
-      external: ['react', 'react-dom', 'classnames', 'overlayscrollbars', 'overlayscrollbars-react', 'smoothscroll-for-websites'],
+      external: ['react', 'react-dom', 'classnames'],
       output: {
         // 为各种格式提供全局变量名
         globals: {
@@ -67,7 +72,7 @@ export default defineConfig({
         // 这里定义了静态资源构建输出的命名
         assetFileNames: (assetInfo) => {
           if (assetInfo.name === 'style.css') {
-            return 'react-overlay-scrollbars-smooth.css';
+            return 'index.css';
           }
           return assetInfo.name;
         }

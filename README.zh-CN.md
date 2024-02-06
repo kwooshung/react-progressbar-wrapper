@@ -1,23 +1,23 @@
 <div align="center">
 
-# React Overlay Scrollbars Smooth
+# @kwooshung/react-progressbar-wrapper
 
-是一款基于 [OverlayScrollbars](https://github.com/KingSora/OverlayScrollbars/) 及 [smoothscroll-for-websites](https://github.com/gblazex/smoothscroll-for-websites) 的整合插件，它隐藏了原生滚动条，提供了自定义样式的覆盖滚动条，并保留了原生功能和感觉，同时具有滚动惯性。
+一个直观、易用的进度条组件。支持自定义位置和样式，能够适应各种内容和布局需求，同时提供流畅的用户体验和高度的可定制性。
 
-[![GitHub License](https://img.shields.io/github/license/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)](LICENSE)
-![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=00b42A&logo=github)
-![GitHub last commit](https://img.shields.io/github/last-commit/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)
-![GitHub top language](https://img.shields.io/github/languages/top/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)
-![GitHub issues](https://img.shields.io/github/issues/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)
-![Github Stars](https://img.shields.io/github/stars/kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)
-[![NPM Version](https://img.shields.io/npm/v/@kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&color=165dff)](https://www.npmjs.com/package/@kwooshung/react-overlay-scrollbars-smooth)
-[![Npm.js Downloads/Week](https://img.shields.io/npm/dw/@kwooshung/react-overlay-scrollbars-smooth?labelColor=272e3b&labelColor=272e3b&color=165dff&logo=npm)](https://www.npmjs.com/package/@kwooshung/react-overlay-scrollbars-smooth)
-[![Github CI/CD](https://github.com/kwooshung/react-overlay-scrollbars-smooth/actions/workflows/ci.yml/badge.svg)](https://github.com/kwooshung/react-overlay-scrollbars-smooth/actions/)
-[![codecov](https://codecov.io/gh/kwooshung/react-overlay-scrollbars-smooth/graph/badge.svg?token=VVZJE7H0KD)](https://codecov.io/gh/kwooshung/react-overlay-scrollbars-smooth)
-[![Maintainability](https://api.codeclimate.com/v1/badges/325d0881b1ca19165d35/maintainability)](https://codeclimate.com/github/kwooshung/react-overlay-scrollbars-smooth/maintainability/)
-[![Gitee Repo](https://img.shields.io/badge/Gitee-react--overlay--scrollbars--smooth-165dff?logo=gitee)](https://gitee.com/kwooshung/react-overlay-scrollbars-smooth/)
+[![GitHub License](https://img.shields.io/github/license/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)](LICENSE)
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=00b42A&logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)
+![GitHub top language](https://img.shields.io/github/languages/top/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)
+![GitHub issues](https://img.shields.io/github/issues/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)
+![Github Stars](https://img.shields.io/github/stars/kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)
+[![NPM Version](https://img.shields.io/npm/v/@kwooshung/react-progressbar-wrapper?labelColor=272e3b&color=165dff)](https://www.npmjs.com/package/@kwooshung/react-progressbar-wrapper)
+[![Npm.js Downloads/Week](https://img.shields.io/npm/dw/@kwooshung/react-progressbar-wrapper?labelColor=272e3b&labelColor=272e3b&color=165dff&logo=npm)](https://www.npmjs.com/package/@kwooshung/react-progressbar-wrapper)
+[![Github CI/CD](https://github.com/kwooshung/react-progressbar-wrapper/actions/workflows/ci.yml/badge.svg)](https://github.com/kwooshung/react-progressbar-wrapper/actions/)
+[![codecov](https://codecov.io/gh/kwooshung/react-progressbar-wrapper/graph/badge.svg?token=CBQ1WB8xkr)](https://codecov.io/gh/kwooshung/react-progressbar-wrapper)
+[![Maintainability](https://api.codeclimate.com/v1/badges/30c9c143fe08f23bb28f/maintainability)](https://codeclimate.com/github/kwooshung/react-progressbar-wrapper/maintainability)
+[![Gitee Repo](https://img.shields.io/badge/Gitee-react--progressbar--wrapper-165dff?logo=gitee)](https://gitee.com/kwooshung/react-progressbar-wrapper/)
 
 <p align="center">
     <a href="README.md">English</a> | 
@@ -25,174 +25,129 @@
 </p>
 </div>
 
-## 为什么开发它？
+# 为什么开发它？
 
-- 我不喜欢默认的浏览器滚动条，它们看起来很丑，而且在不同的浏览器中看起来也不一样。
-- 他无法在不同的浏览器中保持一致的外观和行为，无法深度自定义；
-- 默认滚动条，无法和你的网站或应用程序的设计风格保持一致；
-- 当需要弹窗时，滚动条会出现在弹窗外部，这样会导致页面的滚动条和弹窗的滚动条同时出现，这样会导致用户体验不佳；
-- 当(Dialog/Modal)弹窗时，需要对body进行padding-right，特别当导航条有position:fixed;的时候还需要对其进行特别处理，而且会产生晃动；
-- 滚动条，在鼠标滚轮滚动时，比较生硬不够顺滑；
+- 为什么不用 [NProgress](https://github.com/rstacruz/nprogress)？我曾经也经常使用它，但逐渐发现它不能满足我的要求，我希望的是给用户一种模拟更真实的加载体验，而不是简简单单的匀速加载。
+- 样式不够自由，我希望可以自定义加载条的样式，比如颜色、高度、位置等等，虽然 [NProgress](https://github.com/rstacruz/nprogress) 也支持自定义，但是我不喜欢它的定义方式，更重要的是不能定义滚动条的 **方向** 和 **位置**。
 
-## 安装
+# 为什么使用它？
 
-### npm
+- 支持自定义样式，支持自定义组件，比直接传入属性，更加灵活。
+- 可以模拟更真实的加载体验，比如在3秒内加载到60%，然后再5秒内缓慢的加载80%，直到最大80%的时候，停止并等待进一步指示，直到属性 `done` 为 `true`，加载条才会立即到 `100%` 后渐隐消失，具体参考下方 `API`；
+- 多种事件，方便监听每个阶段的进度条；
+- 位置位置多样，你可以顶部、底部、左侧、右侧；
+- 加载方向多样，从左到右，从右到左，从上到下，从下到上，方便 **rtl** 和 **横向** 网页的场景使用；
+- 支持中英文双语注释；
+- 学习成本低，使用简单且灵活；
+- **ES6** 的现代特性实现；
+- **TypeScript** 编写，类型安全；
+- 可按需引入，`esm` 模块化，天生支持 **树摇（tree-shaking）**，不用担心打包后的体积；
+- 当然本项目也提供了 `commonjs` 规范的 `cjs` 版本；
+- 测试覆盖率 **100%**；
+
+# 安装
+
+## npm
 
 ```bash
-npm install @kwooshung/react-overlay-scrollbars-smooth
+npm install @kwooshung/react-progressbar-wrapper
 ```
 
-### yarn
+## yarn
 
 ```bash
-yarn add @kwooshung/react-overlay-scrollbars-smooth
+yarn add @kwooshung/react-progressbar-wrapper
 ```
 
-### pnpm
+## pnpm
 
 ```bash
-pnpm add @kwooshung/react-overlay-scrollbars-smooth
+pnpm add @kwooshung/react-progressbar-wrapper
 ```
 
-## 使用方法
+# 使用方法
 
-### 样式
+## 样式
 
 在某些框架中直接在全局`css` / `less` / `scss`中引入样式即可，如下所示：
 
 ```css
-@import url('@kwooshung/react-overlay-scrollbars-smooth/dist/react-overlay-scrollbars-smooth.css');
+@import url('@kwooshung/react-progressbar-wrapper/dist/index.css');
 ```
 
 在部分框架中，如 `Next.js` 中，可能需要加入`~`符，才行，如下所示：
 
 ```css
-@import url('~@kwooshung/react-overlay-scrollbars-smooth/dist/react-overlay-scrollbars-smooth.css');
+@import url('~@kwooshung/react-progressbar-wrapper/dist/index.css');
 ```
 
 你也可以在全局页面，如 `Next.js` 中的 `Layout` 页面 或 对应组件 中引入，如下所示：
 
 ```tsx
-import '@kwooshung/react-overlay-scrollbars-smooth/dist/react-overlay-scrollbars-smooth.css';
+import '@kwooshung/react-progressbar-wrapper/dist/index.css';
 ```
 
-### 组件
+## 组件
 
-在某个元素上使用 `OverlayScrollbarsSmooth` 组件，如下所示：
+在某个元素上使用 `ReactProgressbarWrapper` 组件，如下所示：
 
 ```tsx
-import { OverlayScrollbarsSmooth } from '@kwooshung/react-overlay-scrollbars-smooth';
+import ProgressbarWrapper from '@kwooshung/react-progressbar-wrapper';
+import '@kwooshung/react-progressbar-wrapper/dist/index.css';
 
-// 这里使用的是直接在组件中引入次样式，也可以使用上面其他的方式
-import '@kwooshung/react-overlay-scrollbars-smooth/dist/react-overlay-scrollbars-smooth.css';
+const ProgressChildren = <div style={{ height: '2px', background: 'linear-gradient(112.44deg,#ff5858 2.09%,#c058ff 75.22%)', backgroundSize: '165%' }} />;
 
-function App() {
+const Demo = () => {
+  const [active, setActive] = useState<boolean>(false);
   return (
-    <div style={{ height: '300px' }}>
-      <OverlayScrollbarsSmooth>
-        <div style={{ height: '1000px' }} />
-      </OverlayScrollbarsSmooth>
-    </div>
+    <>
+      <ProgressBar active={active}>{ProgressChildren}</ProgressBar>
+      <button onClick={() => setActive(!active)}>Toggle</button>
+    </>
   );
-}
+};
+
+export default Demo;
 ```
 
-如果你想让它作用于 `Body` 上，可以这样做：
+# API
 
-```tsx
-import { OverlayScrollbarsSmooth } from '@kwooshung/react-overlay-scrollbars-smooth';
+## Props
 
-function App() {
-  // 这行代码无论写到什么地方，只要 `tag=body`，它就会作用于 `Body` 上，从而替代默认滚动条。别忘记引入样式！
-  return <OverlayScrollbarsSmooth tag='body' />;
-}
-```
+| 参数               | 说明                                                                                                                            | 类型    | 默认值 |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------- | ------ |
+| active             | 控制进度条是否激活。                                                                                                            | boolean | false  |
+| done               | 指示是否加载完毕。                                                                                                              | boolean | false  |
+| position           | 设置进度条的位置和方向。可选值: 't-lr', 't-rl', 'b-lr', 'b-rl', 'l-tb', 'l-bt', 'r-tb', 'r-bt'。更多说明，看下方 `位置方向说明` | string  | 't-lr' |
+| loadTo             | 设置初始加载到的百分比。                                                                                                        | number  | 65     |
+| durationLoadTo     | 设置达到 `loadTo` 百分比的时间（毫秒）。                                                                                        | number  | 3000   |
+| loadToSlow         | 设置缓慢加载的目标百分比。                                                                                                      | number  | 85     |
+| durationLoadToSlow | 设置达到 `loadToSlow` 百分比的时间（毫秒）。                                                                                    | number  | 6000   |
+| fluctuation        | 设置每个阶段终点的浮动范围。比如 `loadTo` 为 `60%`，那么，终点将会随机为 `50%~70%` 之间。                                       | number  | 10     |
+| delayHide          | 设置完成后的延迟隐藏时间（毫秒）。                                                                                              | number  | 500    |
+| durationHide       | 设置隐藏动画的持续时间（毫秒）。                                                                                                | number  | 300    |
 
-### hooks
+## Events
 
-你可以直接使用 `useSmoothScroll` 实现平滑滚动，它将会导致所有的滚动条都变得平滑，**建议在全局布局之类的地方**调用一次即可，如下所示：
+| 事件               | 说明                                              | 类型                    |
+| ------------------ | ------------------------------------------------- | ----------------------- |
+| onStart            | 进度条开始加载时触发。                            | () => void;             |
+| onLoadToStart      | loadTo 开始加载时触发。                           | () => void;             |
+| onLoadToUpdate     | loadTo 加载过程中触发，参数为当前加载百分比。     | (value:number) => void; |
+| onLoadToDone       | loadTo 加载完毕时触发。                           | () => void;             |
+| onLoadToSlowStart  | loadToSlow 开始加载时触发。                       | () => void;             |
+| onLoadToSlowUpdate | loadToSlow 加载过程中触发，参数为当前加载百分比。 | (value:number) => void; |
+| onLoadToSlowDone   | loadToSlow 加载完毕时触发。                       | () => void;             |
+| onUpdate           | 全程加载中触发，参数为当前加载百分比。            | (value:number) => void; |
+| onDone             | 进度条加载完毕时触发。                            | () => void;             |
 
-```tsx
-import { OverlayScrollbarsSmooth, useSmoothScroll } from '@kwooshung/react-overlay-scrollbars-smooth';
-import '@kwooshung/react-overlay-scrollbars-smooth/dist/react-overlay-scrollbars-smooth.css';
+## 位置方向
 
-function App() {
-  useSmoothScroll();
-
-  return (
-    <div style={{ height: '300px' }}>
-      <OverlayScrollbarsSmooth>
-        <div style={{ height: '1000px' }} />
-      </OverlayScrollbarsSmooth>
-    </div>
-  );
-}
-```
-
-### API
-
-#### OverlayScrollbarsSmooth
-
-`OverlayScrollbarsSmooth` 组件支持所有 `OverlayScrollbars` 的 API，你可以在这里查看 [OverlayScrollbars API](https://github.com/KingSora/OverlayScrollbars/tree/master/packages/overlayscrollbars-react#properties)。
-
-| 属性      | 说明                                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------------------ |
-| tag       | `string`，默认值：`div`，如果是：`body`，作用于 `Body` 上，从而替代默认滚动条。等同于 `OverlayScrollbars` 的 `element`； |
-| className | `string`，默认值：`''`，自定义类名；`tag`=`body` 时，无效；                                                              |
-| options   | 等同于 `OverlayScrollbars` 的 `options`，默认：`{scrollbars: {theme: 'os-theme-dark'}}`                                  |
-| events    | 等同于 `OverlayScrollbars` 的 `events`，默认：`{}`                                                                       |
-
-#### useSmoothScroll
-
-支持 `smoothscroll-for-websites` 除 `excluded` 之外的所有参数，你可以在这里查看 [smoothscroll-for-websites API](https://github.com/gblazex/smoothscroll-for-websites/wiki)，以下参数同时也是默认值（它和 `smoothscroll-for-websites` 的默认值略有区别），你可以根据自己的需求进行修改，如下所示
-
-```tsx
-import { OverlayScrollbarsSmooth, useSmoothScroll } from '@kwooshung/react-overlay-scrollbars-smooth';
-import '@kwooshung/react-overlay-scrollbars-smooth/dist/react-overlay-scrollbars-smooth.css';
-
-function App() {
-  useSmoothScroll({
-    // Scrolling Core
-    frameRate: 150, // [ms]
-    animationTime: 1000, // [ms]
-    stepSize: 100, // [px]
-
-    // Pulse (less tweakable)
-    // ratio of "tail" to "acceleration"
-    pulseAlgorithm: true,
-    pulseScale: 4,
-    pulseNormalize: true,
-
-    // Acceleration
-    accelerationDelta: 50,
-    accelerationMax: 3,
-
-    // Keyboard Settings
-    keyboardSupport: true,
-    arrowScroll: 50,
-
-    // Other
-    touchpadSupport: false, // ignore touchpad by default
-    fixedBackground: true
-  });
-
-  return (
-    <div style={{ height: '300px' }}>
-      <OverlayScrollbarsSmooth>
-        <div style={{ height: '1000px' }} />
-      </OverlayScrollbarsSmooth>
-    </div>
-  );
-}
-```
-
-## 用到的开源项目
-
-> 感谢项目作者为开源社区的无私贡献，让我们的工作变得更加简单！！！
-
-- [OverlayScrollbars：优秀的滚动条自定义组件](https://github.com/KingSora/OverlayScrollbars/)
-- [smoothscroll-for-websites：优秀的滚动条平滑脚本](https://github.com/gblazex/smoothscroll-for-websites)
-
-## 许可证
-
-[MIT](LICENSE)
+- t-lr: 顶部从左到右
+- t-rl: 顶部从右到左
+- b-lr: 底部从左到右
+- b-rl: 底部从右到左
+- l-tb: 左侧从上到下
+- l-bt: 左侧从下到上
+- r-tb: 右侧从上到下
+- r-bt: 右侧从下到上
