@@ -62,24 +62,22 @@ export default defineConfig({
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
-      external: ['react', 'react/jsx-runtime', 'react-dom', 'classnames', '@kwooshung/randoms'],
-      output: [
-        {
-          // 为各种格式提供全局变量名
-          globals: {
-            react: 'react',
-            'react-dom': 'ReactDOM',
-            'react/jsx-runtime': 'react/jsx-runtime'
-          },
-          // 这里定义了静态资源构建输出的命名
-          assetFileNames: (assetInfo) => {
-            if (assetInfo.name === 'style.css') {
-              return 'index.css';
-            }
-            return assetInfo.name;
+      external: ['react', 'react-dom', 'react/jsx-runtime', 'classnames', '@kwooshung/randoms'],
+      output: {
+        // 为各种格式提供全局变量名
+        globals: {
+          react: 'react',
+          'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'react/jsx-runtime'
+        },
+        // 这里定义了静态资源构建输出的命名
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'style.css') {
+            return 'index.css';
           }
+          return assetInfo.name;
         }
-      ]
+      }
     }
   }
 });
