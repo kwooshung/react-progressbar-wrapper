@@ -55,28 +55,31 @@ export default defineConfig({
   build: {
     minify: 'terser',
     lib: {
-      entry: 'src/index.ts',
+      entry: 'src/progressbar/index.tsx',
       name: 'ReactProgressbarWrapper',
       formats: ['cjs', 'es', 'umd'],
       fileName: (format) => `index.${format === 'es' ? 'esm' : format === 'cjs' ? 'cmd' : format}.js`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
-      external: ['react', 'react-dom', 'classnames'],
-      output: {
-        // 为各种格式提供全局变量名
-        globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM'
-        },
-        // 这里定义了静态资源构建输出的命名
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'style.css') {
-            return 'index.css';
+      external: ['react', 'react/jsx-runtime', 'react-dom', 'classnames', '@kwooshung/randoms'],
+      output: [
+        {
+          // 为各种格式提供全局变量名
+          globals: {
+            react: 'react',
+            'react-dom': 'ReactDOM',
+            'react/jsx-runtime': 'react/jsx-runtime'
+          },
+          // 这里定义了静态资源构建输出的命名
+          assetFileNames: (assetInfo) => {
+            if (assetInfo.name === 'style.css') {
+              return 'index.css';
+            }
+            return assetInfo.name;
           }
-          return assetInfo.name;
         }
-      }
+      ]
     }
   }
 });
