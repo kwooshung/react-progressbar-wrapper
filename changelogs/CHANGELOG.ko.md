@@ -1,3 +1,7 @@
+## 🎉 1.0.2 `2024-02-06`
+### 🐛 Fix
+- .codeclimate.yml 유형을 무시합니다 ([#b29551a](https://github.com/kwooshung/files/commit/b29551af41dff9b80e71dfa2340956a936285cc5))
+
 ## 🎉 1.0.1 `2024-02-06`
 ### 🐛 Fix
 - 생산에 포장되는 것에 의존하지 마십시오 ([#f835048](https://github.com/kwooshung/files/commit/f835048f01d97bd61af4f9c2dbed503be15f0f7e))

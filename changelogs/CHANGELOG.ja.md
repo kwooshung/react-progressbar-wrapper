@@ -1,3 +1,7 @@
+## 🎉 1.0.2 `2024-02-06`
+### 🐛 Fix
+- .codeclimate.ymlを無視するタイプを増やします ([#b29551a](https://github.com/kwooshung/files/commit/b29551af41dff9b80e71dfa2340956a936285cc5))
+
 ## 🎉 1.0.1 `2024-02-06`
 ### 🐛 Fix
 - 生産にパッケージ化されることに依存しないでください ([#f835048](https://github.com/kwooshung/files/commit/f835048f01d97bd61af4f9c2dbed503be15f0f7e))

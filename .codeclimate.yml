@@ -1,7 +1,11 @@
-version: "2"
+version: '2'
 exclude_patterns:
-  - "scripts/"
-  - "**/*test.js"
-  - "**/*test.ts"
-  - "**/*spec.js"
-  - "**/*spec.ts"
+  - 'scripts/'
+  - '**/*test.js'
+  - '**/*test.jsx'
+  - '**/*test.ts'
+  - '**/*test.tsx'
+  - '**/*spec.js'
+  - '**/*spec.jsx'
+  - '**/*spec.ts'
+  - '**/*spec.tsx'
