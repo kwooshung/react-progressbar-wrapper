@@ -1,3 +1,7 @@
+## 🎉 1.0.4 `2024-02-15`
+### 🐛 Fix
+- 쓰기 오류를 수정하십시오 ([#486eef6](https://github.com/kwooshung/files/commit/486eef6e5c4001a2b162cb6dbd9166a2c47b91cb))
+
 ## 🎉 1.0.3 `2024-02-06`
 ### 🐛 Fix
 - 구성 오류로 인해 다른 버전의 스크립트가 구축되지 않습니다. ([#12ab526](https://github.com/kwooshung/files/commit/12ab526cb42551656f6fe74b1943097e6da692f4))
