@@ -1,6 +1,6 @@
 <div align="center">
 
-# React Overlay Scrollbars Smooth
+# @kwooshung/react-progressbar-wrapper
 
 An intuitive and user-friendly progress bar component. It supports custom positioning and styling, adapting to a variety of content and layout needs while providing a smooth user experience and high degree of customization.
 
