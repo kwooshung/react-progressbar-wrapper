@@ -88,7 +88,7 @@ You can also import it in a global page, such as the `Layout` page in `Next.js`,
 import '@kwooshung/react-progressbar-wrapper/dist/index.css';
 ```
 
-## 组件
+## Components
 
 在某个元素上使用 `ReactProgressbarWrapper` 组件，如下所示：
 
