@@ -1,6 +1,6 @@
 {
   "name": "@kwooshung/react-progressbar-wrapper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "title": "ReactProgressBarWrapper",
   "description": "The progress bar wrapper at the top of the website supports RTL and the internal style is completely customized. This component only provides external wrapping elements without mentioning any styles.",
   "private": false,
@@ -42,8 +42,8 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
+      "require": "./dist/index.cmd.js",
+      "import": "./dist/index.esm.js",
       "types": "./dist/index.d.ts"
     },
     "./dist/index.css": {
