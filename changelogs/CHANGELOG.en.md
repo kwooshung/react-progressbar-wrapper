@@ -1,3 +1,7 @@
+## 🎉 1.0.6 `2024-02-18`
+### 🐛 Fix
+- Update dependence ([#1c89364](https://github.com/kwooshung/react-progressbar-wrapper/commit/1c893649299a166814cea4d942e17fb482b9c2f3))
+
 ## 🎉 1.0.5 `2024-02-16`
 ### 🐛 Fix
 - Fix the path error of Package.json ([#97e9341](https://github.com/kwooshung/files/commit/97e934155ca5c58c8a54897885dd33705f607f23))
