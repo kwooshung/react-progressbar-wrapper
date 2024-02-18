@@ -1,3 +1,7 @@
+## 🎉 1.0.7 `2024-02-18`
+### 🐛 Fix
+- 로그에서 오류 링크를 업데이트하십시오 ([#0198141](https://github.com/kwooshung/react-progressbar-wrapper/commit/01981411c993789df3da4f1e9f171d7513e9366f))
+
 ## 🎉 1.0.6 `2024-02-18`
 ### 📦 Release
 - 새로운 버전 1.0.6 ([#e958c41](https://github.com/kwooshung/react-progressbar-wrapper/commit/e958c41e1617e984f602e1cbc113b9c17e597007))
