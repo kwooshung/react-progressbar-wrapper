@@ -1,3 +1,7 @@
+## 🎉 1.0.9 `2024-02-18`
+### 🐛 Fix
+- 删除DefaultProps的规范。此功能即将被丢弃 ([#67c5f0a](https://github.com/kwooshung/react-progressbar-wrapper/commit/67c5f0a62143dc82c4d0f619bf96adb537e2c849))
+
 ## 🎉 1.0.8 `2024-02-18`
 ### 🐛 Fix
 - 维修出口 ([#ce0fbca](https://github.com/kwooshung/react-progressbar-wrapper/commit/ce0fbcaa8bede02a46cfce2ba708d9930e73ed47))

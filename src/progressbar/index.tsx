@@ -5,24 +5,6 @@ import { number as randomNumber } from '@kwooshung/randoms';
 import { IKsProgressBarProps, TDimensionStyles } from './interfaces';
 
 /**
- * @zh 组件Props属性：页面加载进度条 默认值
- * @en Component props: page loading progress bar default value
- */
-const defaultProps: IKsProgressBarProps = {
-  active: false,
-  done: false,
-  position: 't-lr',
-  loadTo: 65,
-  durationLoadTo: 3000,
-  loadToSlow: 85,
-  durationLoadToSlow: 6000,
-  fluctuation: 10,
-  delayHide: 500,
-  durationHide: 300,
-  children: null
-};
-
-/**
  * @zh 定时器间隔
  * @en Timer interval
  */
@@ -93,17 +75,16 @@ const calculateProgressBarStyle = (position: string, progress: number, delayHide
  * @en Component: page loading progress bar
  */
 const KsProgressBar = ({
-  active,
-  done,
-  position,
-  loadTo,
-  durationLoadTo,
-  loadToSlow,
-  durationLoadToSlow,
-  fluctuation,
-  delayHide,
-  durationHide,
-  children,
+  active = false,
+  done = false,
+  position = 't-lr',
+  loadTo = 65,
+  durationLoadTo = 3000,
+  loadToSlow = 85,
+  durationLoadToSlow = 6000,
+  fluctuation = 10,
+  delayHide = 500,
+  durationHide = 300,
   onStart,
   onLoadToStart,
   onLoadToUpdate,
@@ -112,7 +93,8 @@ const KsProgressBar = ({
   onLoadToSlowUpdate,
   onLoadToSlowDone,
   onUpdate,
-  onDone
+  onDone,
+  children
 }: IKsProgressBarProps): ReactNode => {
   const refBar = useRef<HTMLDivElement>(null);
 
@@ -228,7 +210,5 @@ const KsProgressBar = ({
     </div>
   );
 };
-
-KsProgressBar.defaultProps = defaultProps;
 
 export default memo(KsProgressBar);

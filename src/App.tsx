@@ -5,7 +5,9 @@ const ProgressChildren = <div style={{ height: '2px', background: 'linear-gradie
 function App() {
   return (
     <>
-      <ProgressBar active={false}>{ProgressChildren}</ProgressBar>
+      <ProgressBar active={false} done={false}>
+        {ProgressChildren}
+      </ProgressBar>
     </>
   );
 }
