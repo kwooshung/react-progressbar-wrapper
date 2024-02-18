@@ -1,3 +1,7 @@
+## 🎉 1.0.9 `2024-02-18`
+### 🐛 Fix
+- DefaultProps의 사양을 제거하십시오. 이 기능은 폐기 될 예정입니다 ([#67c5f0a](https://github.com/kwooshung/react-progressbar-wrapper/commit/67c5f0a62143dc82c4d0f619bf96adb537e2c849))
+
 ## 🎉 1.0.8 `2024-02-18`
 ### 🐛 Fix
 - 수리 수출 ([#ce0fbca](https://github.com/kwooshung/react-progressbar-wrapper/commit/ce0fbcaa8bede02a46cfce2ba708d9930e73ed47))
