@@ -55,7 +55,7 @@ export default defineConfig({
   build: {
     minify: 'terser',
     lib: {
-      entry: 'src/progressbar/index.tsx',
+      entry: 'src/index.ts',
       name: 'ReactProgressbarWrapper',
       formats: ['cjs', 'es', 'umd'],
       fileName: (format) => `index.${format === 'es' ? 'esm' : format === 'cjs' ? 'cmd' : format}.js`

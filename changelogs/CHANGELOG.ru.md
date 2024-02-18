@@ -1,3 +1,7 @@
+## 🎉 1.0.8 `2024-02-18`
+### 🐛 Fix
+- Ремонт экспорт ([#ce0fbca](https://github.com/kwooshung/react-progressbar-wrapper/commit/ce0fbcaa8bede02a46cfce2ba708d9930e73ed47))
+
 ## 🎉 1.0.7 `2024-02-18`
 ### 🐛 Fix
 - Обновить ссылку ошибки в журнале ([#0198141](https://github.com/kwooshung/react-progressbar-wrapper/commit/01981411c993789df3da4f1e9f171d7513e9366f))

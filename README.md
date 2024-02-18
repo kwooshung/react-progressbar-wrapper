@@ -93,16 +93,19 @@ import '@kwooshung/react-progressbar-wrapper/dist/index.css';
 在某个元素上使用 `ReactProgressbarWrapper` 组件，如下所示：
 
 ```tsx
-import ProgressbarWrapper from '@kwooshung/react-progressbar-wrapper';
+import { KsProgressbarWrapper } from '@kwooshung/react-progressbar-wrapper';
 import '@kwooshung/react-progressbar-wrapper/dist/index.css';
 
 const ProgressChildren = <div style={{ height: '2px', background: 'linear-gradient(112.44deg,#ff5858 2.09%,#c058ff 75.22%)', backgroundSize: '165%' }} />;
 
 const Demo = () => {
   const [active, setActive] = useState<boolean>(false);
+  const [done, setDone] = useState<boolean>(false);
   return (
     <>
-      <ProgressBar active={active}>{ProgressChildren}</ProgressBar>
+      <KsProgressbarWrapper active={active} done={done}>
+        {ProgressChildren}
+      </KsProgressbarWrapper>
       <button onClick={() => setActive(!active)}>Toggle</button>
     </>
   );
